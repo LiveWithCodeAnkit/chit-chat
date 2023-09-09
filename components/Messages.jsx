@@ -34,7 +34,7 @@ const Messages = () => {
         chatContainer.scrollTop = chatContainer.scrollHeight;
     };
 
-    console.log(messages);
+    // console.log(messages);
 
     return (
         <div

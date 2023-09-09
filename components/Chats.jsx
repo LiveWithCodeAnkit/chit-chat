@@ -77,7 +77,7 @@ const Chats = () => {
                 });
             });
             setUnreadMsgs(msgs);
-            console.log("$$$$$$$$$$", msgs);
+            // console.log("$$$$$$$$$$", msgs);
         });
         return unsubscribe;
         // eslint-disable-next-line react-hooks/exhaustive-deps

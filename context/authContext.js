@@ -25,7 +25,7 @@ export const UserProvider = ({ children }) => {
 
     const authStateChanged = async (user) => {
         setIsLoading(true);
-        console.log(user);
+        // console.log(user);
         if (!user) {
             clear();
             return;

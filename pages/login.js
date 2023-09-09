@@ -59,7 +59,7 @@ const Login = () => {
                     autoClose: 5000,
                 }
             );
-            console.log("Email send to your registered email id.");
+            // console.log("Email send to your registered email id.");
         } catch (error) {
             console.error("An error occured", error);
         }

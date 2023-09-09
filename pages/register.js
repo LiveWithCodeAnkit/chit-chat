@@ -47,7 +47,7 @@ const Register = () => {
                 email,
                 password
             );
-            console.log(user);
+            // console.log(user);
 
             if (file) {
                 const storageRef = ref(storage, displayName);
@@ -80,7 +80,7 @@ const Register = () => {
                                     displayName,
                                     photoURL: downloadURL,
                                 });
-                                console.log("File available at", downloadURL);
+                                // console.log("File available at", downloadURL);
 
                                 await setDoc(doc(db, "users", user.uid), {
                                     uid: user.uid,

@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-    apiKey:process.env.API_KEY,
-    authDomain: process.env.AUTH_DOMAIN,
-    projectId: process.env.PROJECT_ID,
-    storageBucket:process.env.STORAGEBUCKET,
-    messagingSenderId: process.env.MESSAGING_SENDER_ID,
-    appId:process.env.APP_ID,
+    apiKey: "AIzaSyBzRbpemqZ7akb_CWIix69F7SRGzKiiqmU",
+    authDomain: "chat-app-liveankit.firebaseapp.com",
+    projectId: "chat-app-liveankit",
+    storageBucket: "chat-app-liveankit.appspot.com",
+    messagingSenderId: "753343913547",
+    appId: "1:753343913547:web:322788002d54dca69ab7ce",
   
 };
 export const app = initializeApp(firebaseConfig);

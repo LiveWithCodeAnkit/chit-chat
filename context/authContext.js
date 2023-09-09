@@ -51,7 +51,7 @@ export const UserProvider = ({ children }) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, authStateChanged);
         return () => unsubscribe();
-        
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (

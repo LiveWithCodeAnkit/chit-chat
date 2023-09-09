@@ -33,7 +33,7 @@ const ChatFooter = () => {
     }, [editMsg]);
 
     const onEmojiClick = (emojiData, event) => {
-        console.log(emojiData, event);
+        // console.log(emojiData, event);
         let text = inputText;
         setInputText((text += emojiData.emoji));
     };

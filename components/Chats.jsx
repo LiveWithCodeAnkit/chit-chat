@@ -48,6 +48,7 @@ const Chats = () => {
             }
         });
         return unsubscribe;
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     useEffect(() => {
@@ -79,6 +80,7 @@ const Chats = () => {
             console.log("$$$$$$$$$$", msgs);
         });
         return unsubscribe;
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [chats, selectedChat]);
 
     useEffect(() => {
@@ -126,10 +128,12 @@ const Chats = () => {
             return () => unsub();
         };
         currentUser.uid && getChats();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isBlockExecutedRef.current, users]);
 
     useEffect(() => {
         resetFooterStates();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [data?.chatId]);
 
     const filteredChats = Object.entries(chats || {})

@@ -26,6 +26,7 @@ const Messages = () => {
             }, 0);
         });
         return () => unsub();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [data.chatId]);
 
     const scrollToBottom = () => {

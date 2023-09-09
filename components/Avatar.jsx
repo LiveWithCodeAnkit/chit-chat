@@ -50,6 +50,7 @@ const Avatar = ({ size, user, onClick }) => {
                     <Image
                         width={s}
                         height={s}
+                        alt="not found"
                         src={user.photoURL}
                         className="object-cover object-center w-full h-full"
                     />

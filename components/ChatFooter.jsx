@@ -10,6 +10,7 @@ import { MdDeleteForever } from "react-icons/md";
 import EmojiPicker from "emoji-picker-react";
 import ClickAwayListener from "react-click-away-listener";
 import Composebar from "./Composebar";
+import Image from "next/image";
 
 const ChatFooter = () => {
     const [showImojiPicker, setShowImojiPicker] = useState(false);
@@ -28,6 +29,7 @@ const ChatFooter = () => {
 
     useEffect(() => {
         setInputText(editMsg?.text || "");
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [editMsg]);
 
     const onEmojiClick = (emojiData, event) => {
@@ -50,8 +52,10 @@ const ChatFooter = () => {
         <div className="flex items-center bg-c1/[0.5] p-2 rounded-xl relative">
             {attachmentPreview && (
                 <div className="absolute w-[100px] h-[100px] bottom-16 left-0 bg-c1 p-2 rounded-md">
-                    <img
+                    <Image
                         src={attachmentPreview}
+                        alt="not found"
+                        
                         className="w-full h-full object-contain object-center"
                     />
                     <div
@@ -107,7 +111,7 @@ const ChatFooter = () => {
                 <div className="absolute -top-6 left-4 bg-c2 w-full h-6">
                     <div className="flex gap-2 w-full h-full opacity-50 text-sm text-white">
                         {`${data.user.displayName} is typing`}
-                        <img src="/typing.svg" />
+                        <Image src="/typing.svg"  alt="not found" />
                     </div>
                 </div>
             )}

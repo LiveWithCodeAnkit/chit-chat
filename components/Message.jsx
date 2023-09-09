@@ -108,6 +108,7 @@ const Message = ({ message }) => {
                         <>
                             <Image
                                 src={message.img}
+                                alt="not found"
                                 width={250}
                                 height={250}
                                 className="rounded-3xl max-w-[250px]"

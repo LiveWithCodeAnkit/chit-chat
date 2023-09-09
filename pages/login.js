@@ -29,6 +29,7 @@ const Login = () => {
         if (!isLoading && currentUser) {
             router.push("/");
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currentUser, isLoading]);
 
     const handleSubmit = async (e) => {
